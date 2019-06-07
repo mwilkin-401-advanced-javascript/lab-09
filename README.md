@@ -1,6 +1,6 @@
 # LAB: Classes, Inheritance, Functional Programming
 
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-09)
 
 ### Author: Matt Wilkin
 
@@ -8,11 +8,12 @@
  
 [heroku](https://mighty-falls-92002.herokuapp.com/)
 
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
+[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-09/pull/1)
 
-[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-09)
 
 ## Before you begin
+
 Refer to *Getting Started*  in the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for complete setup, configuration, deployment, and submission instructions.
 
 **Visualize the Application**

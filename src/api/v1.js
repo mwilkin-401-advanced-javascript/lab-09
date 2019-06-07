@@ -19,6 +19,16 @@ router.param('model', modelFinder);
 
 
 // API Routes
+
+/**
+ * Get a list of records for model provided
+ * @route GET /{model}
+ * @param {string} model.path.required - Resource model name
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, results: [{}, {}]}
+ */
+
+
 router.get('/api/v1/:model', handleGetAll);
 router.post('/api/v1/:model', handlePost);
 
