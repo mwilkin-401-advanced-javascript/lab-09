@@ -74,8 +74,8 @@ router.delete('/api/v1/:model/:id', handleDelete);
 
 /**
 * @function handleGetAll
-* @param {object} request - request object
-* @param {object} response - response object
+* @param {Object} request - request object
+* @param {Object} response - response object
 * @param {function} next - calls next middleware
 * @desc Middleware that handle get all route call
 *
@@ -95,8 +95,8 @@ function handleGetAll(request,response,next) {
 
 /**
 * @function handleGetOne
-* @param {object} request - request object
-* @param {object} response - response object
+* @param {Object} request - request object
+* @param {Object} response - response object
 * @param {function} next - calls next middleware
 * @desc Middleware that handles get one route call
  */
@@ -109,8 +109,8 @@ function handleGetOne(request,response,next) {
 
 /**
 * @function handlePost
-* @param {object} request - request object
-* @param {object} response - response object
+* @param {Object} request - request object
+* @param {Object} response - response object
 * @param {function} next - calls next middleware
 * @desc Middleware that handles post route call
  */
@@ -123,8 +123,8 @@ function handlePost(request,response,next) {
 
 /**
 * @function handlePut
-* @param {object} request - request object
-* @param {object} response - response object
+* @param {Object} request - request object
+* @param {Object} response - response object
 * @param {function} next - calls next middleware
 * @desc Middleware that handles put route call
  */
@@ -137,8 +137,8 @@ function handlePut(request,response,next) {
 
 /**
 * @function handleDelete
-* @param {object} request - request object
-* @param {object} response - response object
+* @param {Object} request - request object
+* @param {Object} response - response object
 * @param {function} next - calls next middleware
 * @desc Middleware that handles delete route call
  */
