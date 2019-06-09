@@ -8,6 +8,7 @@
 * @param {Object} request - request object
 * @param {Object} response - response object
 * @desc resource error handler
+* Export object
 * @type {Object}
  */
 
