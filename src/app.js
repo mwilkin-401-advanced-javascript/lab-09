@@ -11,7 +11,10 @@ const cwd = process.cwd();
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-require('../docs/config/swagger.js');
+
+const options = require('../docs/config/swagger.js');
+const expressSwagger = require('express-swagger-generator')(app);
+expressSwagger(options);
 
 // Esoteric Resources
 const errorHandler = require( `${cwd}/src/middleware/500.js`);
@@ -42,5 +45,10 @@ let start = (port = process.env.PORT) => {
     console.log(`Server Up on ${port}`);
   });
 };
-  
+
+/**
+* Export object with app and start methods attached
+* @type {Object}
+ */
+
 module.exports = {app,start};
