@@ -70,6 +70,8 @@ router.get('/api/v1/:model/:id', handleGetOne);
 router.put('/api/v1/:model/:id', handlePut);
 router.delete('/api/v1/:model/:id', handleDelete);
 
+router.get('/api/v1/doc');
+
 // Route Handlers
 
 /**

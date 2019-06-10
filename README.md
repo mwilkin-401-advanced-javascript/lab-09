@@ -14,7 +14,13 @@
 
 ### Documentation
 
-[UML]()
+[UML](https://www.lucidchart.com/publicSegments/view/82c2352d-28b6-46d1-b1df-d01d315e5f52)
+
+### env setup
+
+PORT - 3000
+MONGODB_URI - mongodb://localhost:27017/class-09
+
 
 ## Before you begin
 
@@ -36,7 +42,7 @@ Once you have a good visual and mental model of how the application works, break
 
 ---
 
-## Getting Startedd
+## Getting Started
 * You will be continuing to work on your API server
 * Provided for you is a working server, which you may use as a starter
 
