@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/categories/categories-model.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,49 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/categories/categories-model.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+const Model = require('../memory-model.js');
 
-    <h3> </h3>
+/**
+* @module src/models/categories/categories-model
+ */
 
+/**
+* @typeof categories-model
+* @property {schema} - model schema from child Class
+ */
 
+const schema = {
+  _id: {required:true},
+  name: {required:true},
+};
 
+/**
+* @Class Categories Model
+* @property {class} - class extends from model
+ */
 
+class Categories extends Model {}
 
+/**
+* Export object
+* @type {Object}
+ */
 
-
-
-
-
-    
-
-
-
-
-
+module.exports = new Categories(schema);
+</code></pre>
+        </article>
+    </section>
 
 
 

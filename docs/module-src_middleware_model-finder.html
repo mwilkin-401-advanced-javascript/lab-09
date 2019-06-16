@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: src/app</title>
+    <title>JSDoc: Module: src/middleware/model-finder</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: src/app</h1>
+    <h1 class="page-title">Module: src/middleware/model-finder</h1>
 
     
 
@@ -31,8 +31,6 @@
         
             
         
-            
-        
     
 </header>
 
@@ -40,84 +38,6 @@
     <div class="container-overview">
     
         
-            <div class="description">API Server Module</div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="app.js.html">app.js</a>, <a href="app.js.html#line3">line 3</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         
             
@@ -125,7 +45,7 @@
     
 
     
-    <h4 class="name" id="module:src/app"><span class="type-signature"></span>module:src/app<span class="type-signature"> :Object</span></h4>
+    <h4 class="name" id="module:src/middleware/model-finder"><span class="type-signature"></span>(require("src/middleware/model-finder"))<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
     
 
     
@@ -133,7 +53,7 @@
 
 
 <div class="description">
-    Export object with app and start methods attached
+    Middleware that gets modelnames for pathing
 </div>
 
 
@@ -144,6 +64,101 @@
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">request object</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">response object</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">calls next middleware</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
 
 
 
@@ -177,7 +192,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="app.js.html">app.js</a>, <a href="app.js.html#line54">line 54</a>
+        <a href="middleware_model-finder.js.html">middleware/model-finder.js</a>, <a href="middleware_model-finder.js.html#line14">line 14</a>
     </li></ul></dd>
     
 

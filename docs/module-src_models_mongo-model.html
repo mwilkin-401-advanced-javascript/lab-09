@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: src/api/v1</title>
+    <title>JSDoc: Module: src/models/mongo-model</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: src/api/v1</h1>
+    <h1 class="page-title">Module: src/models/mongo-model</h1>
 
     
 
@@ -31,8 +31,6 @@
         
             
         
-            
-        
     
 </header>
 
@@ -40,85 +38,6 @@
     <div class="container-overview">
     
         
-            <div class="description">API Router Module (V1)
-Integrates with various models through a common Interface (.get(), .post(), .put(), .delete())</div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line3">line 3</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         
             
@@ -126,7 +45,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="module:src/api/v1"><span class="type-signature"></span>module:src/api/v1<span class="type-signature"> :Object</span></h4>
+    <h4 class="name" id="module:src/models/mongo-model"><span class="type-signature"></span>module:src/models/mongo-model<span class="type-signature"> :Object</span></h4>
     
 
     
@@ -178,7 +97,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line159">line 159</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line74">line 74</a>
     </li></ul></dd>
     
 
@@ -217,6 +136,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-src_models_mongo-model-Mongo%2520Model.html">Mongo Model</a></dt>
+            <dd></dd>
+        </dl>
+    
 
     
 
@@ -235,16 +161,12 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleDelete"><span class="type-signature">(inner) </span>handleDelete<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~constructor"><span class="type-signature">(inner) </span>constructor<span class="signature">(schema, schema)</span><span class="type-signature"></span></h4>
     
 
     
 
 
-
-<div class="description">
-    Middleware that handles delete route call
-</div>
 
 
 
@@ -279,13 +201,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>schema</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">players</span>
 
 
             
@@ -295,20 +217,20 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
+            <td class="description last">schema from players</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>schema</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">teams</span>
 
 
             
@@ -318,30 +240,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">schema from teams</td>
         </tr>
 
     
@@ -382,7 +281,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line140">line 140</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line15">line 15</a>
     </li></ul></dd>
     
 
@@ -418,7 +317,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleGetAll"><span class="type-signature">(inner) </span>handleGetAll<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~delete"><span class="type-signature">(inner) </span>delete<span class="signature">(_id)</span><span class="type-signature"></span></h4>
     
 
     
@@ -426,7 +325,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handle get all route call
+    Delete an item from the database
 </div>
 
 
@@ -462,13 +361,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">string</span>
 
 
             
@@ -478,53 +377,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">Id for specific entry that should be deleted</td>
         </tr>
 
     
@@ -565,7 +418,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line77">line 77</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line58">line 58</a>
     </li></ul></dd>
     
 
@@ -601,7 +454,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleGetOne"><span class="type-signature">(inner) </span>handleGetOne<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~get"><span class="type-signature">(inner) </span>get<span class="signature">(_id)</span><span class="type-signature"></span></h4>
     
 
     
@@ -609,7 +462,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles get one route call
+    Get on or all items from database
 </div>
 
 
@@ -645,13 +498,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">string</span>
 
 
             
@@ -661,53 +514,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">Id for specific players</td>
         </tr>
 
     
@@ -748,7 +555,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line98">line 98</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line25">line 25</a>
     </li></ul></dd>
     
 
@@ -784,7 +591,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handlePost"><span class="type-signature">(inner) </span>handlePost<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~post"><span class="type-signature">(inner) </span>post<span class="signature">(record)</span><span class="type-signature"></span></h4>
     
 
     
@@ -792,7 +599,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles post route call
+    Add an item to the database
 </div>
 
 
@@ -828,13 +635,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>record</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">string</span>
 
 
             
@@ -844,53 +651,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">information about what should be added</td>
         </tr>
 
     
@@ -931,7 +692,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line112">line 112</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line36">line 36</a>
     </li></ul></dd>
     
 
@@ -967,7 +728,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handlePut"><span class="type-signature">(inner) </span>handlePut<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~put"><span class="type-signature">(inner) </span>put<span class="signature">(_id, record)</span><span class="type-signature"></span></h4>
     
 
     
@@ -975,7 +736,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles put route call
+    Modify one item in the database
 </div>
 
 
@@ -1011,13 +772,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">string</span>
 
 
             
@@ -1027,20 +788,20 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
+            <td class="description last">Id for specific entry</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>record</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">string</span>
 
 
             
@@ -1050,30 +811,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">information about what should be added or updated</td>
         </tr>
 
     
@@ -1114,7 +852,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line126">line 126</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line47">line 47</a>
     </li></ul></dd>
     
 
