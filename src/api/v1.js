@@ -151,4 +151,9 @@ function handleDelete(request,response,next) {
     .catch( next );
 }
 
+/**
+ * Export object
+ * @type {Object}
+ */
+
 module.exports = router;

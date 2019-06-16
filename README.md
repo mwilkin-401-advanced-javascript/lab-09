@@ -18,8 +18,7 @@
 
 ### env setup
 
-PORT - 3000
-MONGODB_URI - mongodb://localhost:27017/class-09
+refer to env-sample file
 
 
 ## Before you begin
