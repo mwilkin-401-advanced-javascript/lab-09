@@ -6,7 +6,7 @@ const teams = require(`${rootDir}/src/models/teams/teams-model.js`);
 const supergoose = require('../supergoose.js');
 
 beforeAll(supergoose.startDB);
-beforeAll(supergoose.stopDB);
+afterAll(supergoose.stopDB);
 
 describe('Teams Model', () => {
 
