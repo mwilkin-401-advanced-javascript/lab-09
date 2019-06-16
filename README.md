@@ -1,15 +1,28 @@
 # LAB: Classes, Inheritance, Functional Programming
 
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-09)
 
 ### Author: Matt Wilkin
 
 ### Links and Resources
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
+ 
+[heroku](https://mighty-falls-92002.herokuapp.com/)
 
-[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-09/pull/1)
+
+[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-09)
+
+### Documentation
+
+[UML](https://www.lucidchart.com/publicSegments/view/82c2352d-28b6-46d1-b1df-d01d315e5f52)
+
+### env setup
+
+refer to env-sample file
+
 
 ## Before you begin
+
 Refer to *Getting Started*  in the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for complete setup, configuration, deployment, and submission instructions.
 
 **Visualize the Application**
@@ -28,7 +41,7 @@ Once you have a good visual and mental model of how the application works, break
 
 ---
 
-## Getting Startedd
+## Getting Started
 * You will be continuing to work on your API server
 * Provided for you is a working server, which you may use as a starter
 

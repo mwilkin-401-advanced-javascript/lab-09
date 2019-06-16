@@ -20,12 +20,17 @@ const v1Router = require( `${cwd}/src/api/v1.js` );
 // Prepare the express app
 const app = express();
 
+const options = require('../docs/config/swagger.js');
+const expressSwagger = require('express-swagger-generator')(app);
+expressSwagger(options);
+
 // App Level MW
 app.use(cors());
 app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(express.static('docs'));
 
 // Routes
 app.use(v1Router);
@@ -40,5 +45,10 @@ let start = (port = process.env.PORT) => {
     console.log(`Server Up on ${port}`);
   });
 };
-  
+
+/**
+* Export object with app and start methods attached
+* @type {Object}
+ */
+
 module.exports = {app,start};

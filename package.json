@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "lint": "eslint **/*.js",
-    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
+    "start": "nodemon index.js",
+    "lint": "eslint \"src/*.js\"",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json .",
     "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test-watch": "jest --watchAll --verbose",
+    "push-check": "npm test && npm run lint",
+    "build-docs": "jsdoc -c ./docs/config/jsdoc.config.json . && open ./docs/index.html"
   },
   "jest": {
     "testEnvironment": "node"
@@ -19,8 +21,12 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
+    "eslint": "^5.16.0",
     "express": "^4.16.4",
-    "jest": "^23.6.0",
+    "express-swagger-generator": "^1.1.14",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2",
+    "mongo": "^0.1.0",
     "mongodb-memory-server": "^2.9.1",
     "mongoose": "^5.4.2",
     "mongoose-schema-jsonschema": "^1.2.1",
