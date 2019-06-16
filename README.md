@@ -1,6 +1,6 @@
 # LAB: Classes, Inheritance, Functional Programming
 
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-09)
+[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-09)
 
 ### Author: Matt Wilkin
 
